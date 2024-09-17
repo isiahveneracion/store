@@ -18,15 +18,15 @@ const ProductTable = () => {
           </Table.Row>
           <Table.Row>
             <Table.Column>Tennis</Table.Column>
-            <Table.Column>$49.99</Table.Column>
+            <Table.Column>$99.99</Table.Column>
           </Table.Row>
           <Table.Row>
             <Table.Column>Badmington</Table.Column>
-            <Table.Column>$49.99</Table.Column>
+            <Table.Column>$99.99</Table.Column>
           </Table.Row>
           <Table.Row>
             <Table.Column>Basketball</Table.Column>
-            <Table.Column>$49.99</Table.Column>
+            <Table.Column>$99.99</Table.Column>
           </Table.Row>
           <Table.Row>
             <Table.ColumnHeader colspan="2">Sporting Goods</Table.ColumnHeader>
