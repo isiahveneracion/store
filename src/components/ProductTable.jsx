@@ -20,13 +20,19 @@ const ProductTable = ({ headers, products }) => {
         <Table.TBody>
           <ProductCategoryHeader text={headers[0]} />
 
+          {sportingGoods.map(({ id, name, price, type }) => (
+            <ProductItem key={`${type}-${id}`} name={name} price={price} />
+          ))}
+          {/*           
+          <ProductCategoryHeader text={headers[0]} />
+
           {sportingGoods.map((sportingGood) => (
             <ProductItem
               key={`${sportingGood.type}-${sportingGood.id}`}
               name={sportingGood.name}
               price={sportingGood.price}
             />
-          ))}
+          ))} */}
 
           <ProductCategoryHeader text={headers[1]} />
 
