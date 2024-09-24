@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "./Table";
+import ProductItem from "./products/ProductItem";
 
 const ProductTable = () => {
   return (
@@ -16,20 +17,11 @@ const ProductTable = () => {
           <Table.Row>
             <Table.ColumnHeader colspan="2">Sporting Goods</Table.ColumnHeader>
           </Table.Row>
+          <ProductItem name="Tennis" price={99.9} />
+          <ProductItem name="Badminton" price={59.9} />
+          <ProductItem name="Baskteball" price={29.9} />
           <Table.Row>
-            <Table.Column>Tennis</Table.Column>
-            <Table.Column>$69.99</Table.Column>
-          </Table.Row>
-          <Table.Row>
-            <Table.Column>Badmington</Table.Column>
-            <Table.Column>$69.99</Table.Column>
-          </Table.Row>
-          <Table.Row>
-            <Table.Column>Basketball</Table.Column>
-            <Table.Column>$69.99</Table.Column>
-          </Table.Row>
-          <Table.Row>
-            <Table.ColumnHeader colspan="2">Sporting Goods</Table.ColumnHeader>
+            <Table.ColumnHeader colspan="2">Electronics</Table.ColumnHeader>
           </Table.Row>
           <Table.Row>
             <Table.Column>Ipod Touch</Table.Column>
