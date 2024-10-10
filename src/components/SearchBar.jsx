@@ -1,12 +1,14 @@
-import React, { children } from "react";
+import React from "react";
 
 const SearchBar = ({ query, setQuery, stockChecked, setStockChecked }) => {
   return (
     <div>
       <input
+        placeholder="Type here"
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className="border-2 rounded-lg p-2 border-pink-300"
       />
       <div>
         <input
