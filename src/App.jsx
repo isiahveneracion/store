@@ -3,6 +3,7 @@ import "./App.css";
 import FilterProductTable from "./components/FilterProductTable";
 // import ProductTable from "./components/ProductTable";
 import SearchBar from "./components/SearchBar";
+import ProductCard from "./components/products/ProductCard";
 
 const headers = ["Sporting Goods", "Electronics"];
 
@@ -43,9 +44,13 @@ function App() {
         setStockChecked={setStockChecked}
       />
       {!loading ? (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-wrap gap-5">
           {products.map((product) => (
-            <span key={product.id}>{product.title}</span>
+            <ProductCard
+              key={`product-${product.id}`}
+              imageSrc={product.image}
+              name={product.title}
+            ></ProductCard>
           ))}
         </div>
       ) : (
