@@ -10,7 +10,7 @@ function ProductCard({ imageSrc, name, id }) {
 
       <div>
         <Link
-          to={`/${id}`}
+          to={`/products/${id}`}
           className="bg-green-500 hover:bg-green-500/70 px-4 py-2 rounded-lg"
         >
           View
